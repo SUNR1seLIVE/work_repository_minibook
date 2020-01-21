@@ -5,8 +5,7 @@ var
   preloader = document.getElementById('page-preloader'),
   perc_display = document.getElementById('load-perc');
 
-  console.log(images_total_count)
-
+  
 for ( var i = 0; i < images_total_count; i++ ) {
   image_clone = new Image();
   image_clone.onload = image_loaded;

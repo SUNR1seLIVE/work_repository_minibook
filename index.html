@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Портфолио</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/ui_elements.css" />
+    <link rel="stylesheet" href="assets/css/section_my_projects.css" />
   </head>
   <body>
     <div id="page-preloader" class="preloader">
@@ -21,7 +23,7 @@
     </div>
 
     <div class="bg-color">
-      <div class="container">
+      <div class="container" style="display: none;">
         <header>
           <div class="logo">
             <a href="index.html"
@@ -72,16 +74,22 @@
                 <a href="#"><span>Contacts</span></a>
               </li>
               <li>
-                <span>En</span>
+                <button class="btn btn_lang">
+                  <span>En</span>
+                </button>
+              </li>
+              <li>
+                <button id="burg_btn" class="btn btn_burg" onclick="btnClickActiv()">
+                  <span class="burg_line"></span>
+                </button>
               </li>
             </ul>
           </nav>
         </header>
       </div>
 
-      <div class="container">
+      <div class="container" style="display: none;">
         <section class="home">
-          
           <h2 class="home-title">Web Developer</h2>
           <p class="home-text">
             Hello, My name is <span class="my-title">Alexander</span> and i'm
@@ -93,8 +101,21 @@
       </div>
 
       <div class="container">
+          <section class="my-projects">
+            <div class="my-projects-title">
+              <h2>My projects</h2>
+            </div>            
+            
+            <div class="container_priject">
+              <!-- <img class="my_photo" src="assets/img/Home_index/web_1.png" alt="" /> -->
+            </div>
+            
+          </section>
+        </div>
+
+      <div class="container">
         <section class="about-me">
-          <img class="my_photo" src="assets/img/Home_index/photo.jpg" alt="">
+          <img class="my_photo" src="assets/img/Home_index/photo.jpg" alt="" />
           <h2>Обо мне</h2>
         </section>
       </div>
@@ -109,5 +130,6 @@
     </div>
 
     <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/ui_elements.js"></script>
   </body>
 </html>
