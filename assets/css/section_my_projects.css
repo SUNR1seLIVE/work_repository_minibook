@@ -1,3 +1,0 @@
-.my-projects { display: -ms-grid; display: grid; -ms-grid-rows: 250px min-content; grid-template-rows: 250px -webkit-min-content; grid-template-rows: 250px min-content; }
-
-.my-projects .my-projects-title { height: 100%; }
